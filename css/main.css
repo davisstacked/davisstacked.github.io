@@ -2,21 +2,21 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif !important;
-  }
+}
 
   /* Nav Bar */
 
-  .navlink {
-      color: teal;
-  }
-  
-  .logo {
+.navlink {
+    color: teal;
+}
+
+.logo {
     font-size: 25px !important;
     background-color: white;
     color: teal;
-  }
-  
-  
+}
+
+
 
 /* ABOUT */
 .about {
