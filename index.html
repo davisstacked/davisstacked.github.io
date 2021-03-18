@@ -28,34 +28,39 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- CSS -->
     <link href="./css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar is-transparent is-fixed-top">
-        <div class="navbar-brand">
-            <a class="navbar-item logo" href="#about" target="blank">Leah Davis</a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Leah Davis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-start">
-            </div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <a class="navbar-item item-one navlink" href="#about">About</a>
-                    <a class="navbar-item item-two navlink" href="#skills">Skills</a>
-                    <a class="navbar-item item-three navlink" href="#projects">Projects</a>
-                    <a class="navbar-item item-four navlink" href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+      </nav>
     <main>
         <div class="background" id="about"></div>
         <section class="about">
@@ -78,9 +83,9 @@
                 <div class="icon-size">
                     <i class="devicon-react-original-wordmark colored"></i>
                     <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-nodejs-plain colored"></i>
                     <i class="devicon-html5-plain-wordmark colored"></i>
                     <i class="devicon-css3-plain-wordmark colored"></i>
+                    <!-- <i class="devicon-nodejs-plain colored"></i> -->
                     <i class="devicon-github-plain-wordmark colored"></i>
                     <i class="devicon-git-plain-wordmark colored"></i>
                     <i class="devicon-mongodb-plain-wordmark colored"></i>
@@ -95,7 +100,7 @@
         <!-- PROJECTS -->
         <h1 id="projects">PROJECTS</h1>
             <!--  IT'S GONNA BE GREAT! -->
-          <section class="section reveal load-hidden section-padding">
+        <section class="section reveal load-hidden section-padding">
             <div class="container">
                 <div class="columns is-variable bd-klmn-columns is-8">
                     <div class="column is-6">
@@ -160,36 +165,37 @@
             </div>
         </section>
 
-                    <!-- GITHUB FINDER -->
-                    <div class="container">
-                        <div class="columns is-variable bd-klmn-columns is-8">
-                            <div class="column is-6">
-                                <div class="image-container">
-                                    <figure class="image is-4by3 image-border">
-                                        <a href="https://nifty-mahavira-768c4c.netlify.app/" target="_blank">
-                                            <img src="./images/GithubFinder.png">
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <h1 class="title">GITHUB FINDER</h1>
-                                <h2 class="subtitle">
-                                    Github Finder is a React app utilized to search for and show the profiles of Github users. </h2>
-                                <h1>
-                                    <strong>TECHNOLOGIES USED:</strong>
-                                    <br> React, React Hooks, Context API, JavaScript, CSS, Github</h1>
-                                <br>
-                                <div>
-                                    <a class="button is-warning" href="https://github.com/davisstacked/github-finder"
-                                        target="_blank"> GitHub </a>
-                                    <a class="button is-warning" href="https://nifty-mahavira-768c4c.netlify.app/" target="_blank">
-                                        View Project</a>
-                                </div>
-                            </div>
+            <!-- GITHUB FINDER -->
+            <section class="section reveal load-hidden section-padding">
+            <div class="container">
+                <div class="columns is-variable bd-klmn-columns is-8">
+                    <div class="column is-6">
+                        <div class="image-container">
+                            <figure class="image is-4by3 image-border">
+                                <a href="https://nifty-mahavira-768c4c.netlify.app/" target="_blank">
+                                    <img src="./images/GithubFinder.png">
+                                </a>
+                            </figure>
                         </div>
                     </div>
-                </section>
+                    <div class="column">
+                        <h1 class="title">GITHUB FINDER</h1>
+                        <h2 class="subtitle">
+                            Github Finder is a React app utilized to search for and show the profiles of Github users. </h2>
+                        <h1>
+                            <strong>TECHNOLOGIES USED:</strong>
+                            <br> React, React Hooks, Context API, JavaScript, CSS, Github</h1>
+                        <br>
+                        <div>
+                            <a class="button is-warning" href="https://github.com/davisstacked/github-finder"
+                                target="_blank"> GitHub </a>
+                            <a class="button is-warning" href="https://nifty-mahavira-768c4c.netlify.app/" target="_blank">
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
                 <!--  THE COLLECTOR'S GUILD -->
                 <section class="section reveal load-hidden section-padding">
                     <div class="container">
@@ -264,6 +270,7 @@
                 </section>
 
         <!-- WAYFAYER -->
+        <section class="section reveal load-hidden section-padding"></section>
             <div class="container">
                 <div class="columns is-variable bd-klmn-columns is-8">
                     <div class="column">
